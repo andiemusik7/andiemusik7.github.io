@@ -160,6 +160,28 @@ export default function PerformanceActivitiesPage(props) {
     )
   }
 
+  // Content for 'Media' section
+  const mediaWebContent = []; // content for web category
+  for (const [ , event] of activities.media.web.entries()) {
+    mediaWebContent.push(
+      <a href={event.url}>
+        <Typography className={classes.contactLink}>
+          {event.name}
+        </Typography>
+      </a>
+    )
+  }
+  const mediaPressContent = []; // content for press category
+  for (const [ , event] of activities.media.press.entries()) {
+    mediaPressContent.push(
+      <a href={event.url}>
+        <Typography className={classes.contactLink}>
+          {event.name}
+        </Typography>
+      </a>
+    )
+  }
+
   // Content for 'Recoginition' secion
   const recognitionContent = [];
   for (const [ , event] of activities.recognition.entries()) {
@@ -211,7 +233,7 @@ export default function PerformanceActivitiesPage(props) {
                   <Tab label="Soloist With" {...a11yProps(1)} />
                   <Tab label="Overseas Recitals" {...a11yProps(2)} />
                   <Tab label="Solo Recitals" {...a11yProps(3)} />
-                  <Tab label="Television and Radio" {...a11yProps(4)} />
+                  <Tab label="Media" {...a11yProps(4)} />
                   <Tab label="Recognition" {...a11yProps(5)} />
               </Tabs>
               {/* Overseas Tour Section */}
@@ -256,25 +278,35 @@ export default function PerformanceActivitiesPage(props) {
                   </Grid>
                 </div>
               </TabPanel>
-              {/* Television & Radio Section */}
+              {/* Media Section */}
               <TabPanel value={value} index={4}>
                 <div className={classes.titleContainer}>
-                  <h2 className={classes.title}>Television and Radio</h2>
+                  <h2 className={classes.title}>Media</h2>
                 </div>
                 <div className={classes.mainContainer}>
                   <Typography variant="h6" component="h2" color="primary">
                     Television
                   </Typography>
                   <Typography>
-                    {activities.tvRadio.tv}
+                    {activities.media.tv}
                   </Typography>
                   <br></br>
                   <Typography variant="h6" component="h2" color="primary">
                     Radio
                   </Typography>
                   <Typography>
-                    {activities.tvRadio.radio}
+                    {activities.media.radio}
                   </Typography>
+                  <br></br>
+                  <Typography variant="h6" component="h2" color="primary">
+                    Web
+                  </Typography>
+                  {mediaWebContent}
+                  <br></br>
+                  <Typography variant="h6" component="h2" color="primary">
+                    Press
+                  </Typography>
+                  {mediaPressContent}
                 </div>
               </TabPanel>
               {/* Recognition Section */}

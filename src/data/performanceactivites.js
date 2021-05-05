@@ -1,11 +1,33 @@
 export const activities = {
     "overseasTour": [
         {
+            "year": "2020",
+            "events": [
+                {
+                    "title": "University of Belize",
+                    "description": "Performances and masterclasses"
+                }
+            ]
+        },
+        {
+            "year": "2018",
+            "events": [
+                {
+                    "title": "Commune di Pisciotta, Cilento Coast (Italy), Citta di Siracusa (Sicily)",
+                    "description": "Performances"
+                }
+            ]
+        },
+        {
             "year": "2017",
             "events": [
                 {
                     "title": "University of Otago, Dunedin | Victoria Universitty, Wellington, New Zealand",
                     "description": "Performances, lectures, and masterclasses"
+                },
+                {
+                    "title": "Ningxia University, Yinchuan; Baotou Teacher’s College, Mongolia; Xiamen University PRC",
+                    "description": "Performances and masterclasses"
                 },
                 {
                     "title": "University of Cape Town, South Africa",
@@ -200,6 +222,7 @@ export const activities = {
         }
     ],
     "soloist": [
+        "Berklee College of Music American Roots Music Program: “Billie Holiday Birthday Symposium",
         "Albuquerque Philharmonic",
         "Xiamen Philharmonic Orchestra",
         "Sinfonietta Hungarica, Budapest",
@@ -494,9 +517,29 @@ export const activities = {
             "secondLine": "Dunster House/ Currier House/ Paine Recital Hall"
         }
     ],
-    "tvRadio": {
+    "media": {
         "tv": "WRET, WSPA, WGBH; FM - WQXR, WFUV, WUFT, WGBH; NPR, APR",
-        "radio": "USA, European, North African, Middle Eastern and Asian television and radio; New York, Massachusetts, Florida, North and South Carolina public television"
+        "radio": "USA, European, North African, Middle Eastern and Asian television and radio; New York, Massachusetts, Florida, North and South Carolina public television",
+        "web": [
+            {
+                "name": "Blood on Gold Mountain”- a story from the 1871 LA Chinatown Massacre (2021)",
+                "url": "https://blood-on-gold-mountain.captivate.fm/"
+            },
+            {
+                "name": "Beethoven Piano Sonata 0p. 109 feature page posted on Serenade, the major classical music site in India (2021)",
+                "url": "https://serenademagazine.com/series/opinion/beethoven-in-2021-why-his-music-continues-to-matter-during-the-covid-19-pandemic/"
+            }
+        ],
+        "press": [
+            {
+                "name": "Featured speaker in Academic Minute, “Tradition and Environmentalism in Bali: An Interdisciplinary Perspective",
+                "url": "https://academicminute.org/2021/02/hao-huang-scripps-college-tradition-and environmentalism-in-bali-an-interdisciplinary-perspective/"
+            },
+            {
+                "name": "Inside Higher Ed",
+                "url": "https://www.insidehighered.com/audio/2021/02/01/tradition-and-environmentalism-bali"
+            }
+        ]
     },
     "recognition": [
         "Washington Post",
